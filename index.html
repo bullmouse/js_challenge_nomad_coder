@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome to My Website!</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="login">
+        <div class="login-weather main-template">
+          <h4>Wait until fetching data ...</h4>
+        </div>
+        <h1 class="login-title">
+          It's<br />
+          <div class="clock"></div>
+          o'clock Now
+        </h1>
+        <div class="login-answer">
+          <label for="login-answer__input">And your name is .. </label>
+          <input
+            type="text"
+            id="login-answer__input"
+            class="input-template"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <button class="login-answer__button">Let's Login!</button>
+      </div>
+      <div class="main hidden">
+        <div class="main-title main-template"></div>
+        <div class="main-todo__input main-template">
+          <h2>What do you want TODO?</h2>
+          <form id="todo-form">
+            <input
+              type="text"
+              placeholder="Write then Press Enter"
+              class="input-template"
+              required
+            />
+          </form>
+        </div>
+        <div class="main-todo__list main-template">
+          <div class="main-todo__list-title">
+            <h2>TODO LIST</h2>
+          </div>
+          <div class="main-todo__list-components"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/background.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/todos.js"></script>
+  <script src="js/weather.js"></script>
+</html>
